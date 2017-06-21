@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+		<title>Form Validattion</title>
+		<link href="form_validate.css" rel="stylesheet" type="text/css">
+		<script>
+			
+		</script>
+	</head>
+	<body onload="form.reset();">
+		<div class="calc">
+		<form id="form">
+		
+			<p>
+				<label>First No.</label>
+				<input type="text" id="inpt1"/>			
+			</p>
+			<p>
+				<label>Second No.</label>
+				<input type="text" id="inpt2"/>			
+			</p>
+			<p><select onchange="calculator()" id="choice">
+				<option value="add">Add</option>
+				<option value="subtract">Subtract</option>
+				<option value="multiply">Multiply</option>
+				<option value="divide">Divide</option>
+			</select>
+			</p>
+			<p><input type="button" value="submit" onclick="calculator()" /></p>
+			
+		</form>
+		<div class="result">
+			<p id="result"></p>
+		</div>
+	</div>
+	</body>
+</html>

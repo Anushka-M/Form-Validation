@@ -1,0 +1,32 @@
+.main-div form{
+	margin:0 auto;
+	width:40%;
+	background-color:#f1f1f1;	
+	padding:10px;
+}
+
+.main-div form p{
+	padding:5px;
+}
+.main-div form label{
+	width:20%;
+	
+}
+.main-div form input{
+	width:50%;
+	float:right;
+	padding:5px;
+	border-radius:3px;
+}
+
+.main-div form span{
+	width:50%;
+	float:right;
+}
+
+.main-div form button{	
+	padding:10px;
+	border-radius:3px;
+	background-color: #afb3b4 ;
+	border:none;
+}

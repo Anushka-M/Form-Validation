@@ -1,0 +1,29 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#inpForm {
+	background-color: #f1f1f1;
+	padding:20px;
+	margin:0 auto;
+}
+#inpForm p{
+	padding:20px;
+	width:50%
+}
+
+#inpForm label{
+	width:30%;
+}
+
+#inpForm input{
+	float:right;
+	width:70%;
+	padding:5px;
+	border-radius:4px;
+}
+
+#inpForm input:hover{
+	border-color:#99CCFF;
+}
