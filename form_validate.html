@@ -5,6 +5,18 @@
 		<title>Form Validattion</title>
 		<link href="form_validate.css" rel="stylesheet" type="text/css">
 		<script>
+			function submitForm(){
+				var x = document.querySelectorAll("input");
+				alert("inside fucntion");
+				var i;
+				for(i=0;i<x.lenght;i++){
+					if(x[i].value== ""){
+						x[i].style.backgroundColor = "#f7bbae";
+						alert("All fields are mandatory");
+						return;
+					}
+				}
+			}
 			function validateForm(d){
 				var input = d.getAttribute('id');
 				//console.log(input.toLowerCase());
@@ -86,12 +98,14 @@
 					
 				}
 				
+				
+				
 			}
 		</script>
 	</head>
 	<body onload="form.reset();">
 		<div class="main-div">
-		<form id="form">
+		<form id="form" action="#">
 			<p>
 				<label>First Name</label>
 				<input type="text" data="fname" onkeyup="validateForm(this)" placeholder="First Name" id="f_name"/>	
@@ -121,7 +135,7 @@
 				<input type="password" placeholder="Password" onkeyup="validateForm(this)" id="c_pass" />
 				<span id="password"></span>
 			</p>
-			<p><button onclick="validateForm(this)">Submit</button></p>
+			<p><button onclick="submitForm()" type="submit">Submit</button></p>
 			
 		</form>
 		
