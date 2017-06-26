@@ -23,8 +23,15 @@
 	width:50%;
 	float:right;
 }
-
-.main-div form button{	
+.main-div div{
+	margin:0 auto;
+	width:40%;
+	background-color:#f1f1f1;	
+	padding:10px;
+	
+}
+.main-div div button{
+		
 	padding:10px;
 	border-radius:3px;
 	background-color: #afb3b4 ;
